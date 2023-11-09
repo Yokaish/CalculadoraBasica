@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Montserrat:ital,wght@1,600&display=swap');
+
+:root {
+    --cor-de-fundo: #D9E7CB;
+    --cor-card: #F8FAF0;
+    --cor-search: rgb(72, 72, 72);
+    --branco: #ffffff;
+    --azul-gradiente: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: 'Gabarito', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--cor-de-fundo);
+}
+
+.calculadora {
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content__square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__square__idk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-card);
+    height: 600px;
+    width: 800px;
+    border-radius: 16px;
+    flex-direction: column;
+    border: 5px solid #A5AF9B;
+
+}
+
+.tabel__icon {
+    display: block; /* Remove espaços em branco abaixo da imagem */
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+}
+
+.img {
+    text-align: center;
+}
+
+.content__labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.square__search {
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #A5AF9B;
+    border: none;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    text-align: center;
+}
+
+.square__search:hover {
+    border: none;
+}
+
+.text {
+    font-family: var(--fonte-principal);
+}
+
+.result-box {
+    font-family: var(--fonte-principal);
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #A5AF9B;
+    border-radius: 6px;
+    height: 40px;
+    width: 180px;
+}
+
+#result {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #A5AF9B;
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.button__div {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+}
+
+.button__img {
+    height: 20px;
+    width: 20px;
+}
+
+.result__div {
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+
+@media (max-width:1200px) {
+
+.content__square__idk {
+    width: 300px;
+}
+
+
+}
+
+
